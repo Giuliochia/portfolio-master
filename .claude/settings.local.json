@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(taskkill /PID 8536 /F)",
+      "PowerShell($size = \\(Get-Item \"c:\\\\Users\\\\giuli\\\\Desktop\\\\Progetti\\\\portfolio-master\\\\public\\\\logo.svg\"\\).Length; Write-Output \"Size: $\\([math]::Round\\($size/1KB, 1\\)\\) KB\")",
+      "Bash(gh repo *)",
+      "Bash(gh api *)"
+    ]
+  }
+}
