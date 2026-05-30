@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { ArrowDown } from "lucide-react";
 import Image from "next/image";
 
 const EASE: [number, number, number, number] = [0.21, 0.47, 0.32, 0.98];
@@ -140,11 +139,11 @@ export default function HeroSection() {
             transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
           >
             <Image
-              src="/logo.svg"
+              src="/logo.png"
               alt="GC Logo"
               width={208}
               height={208}
-              className="w-40 h-40 sm:w-52 sm:h-52 object-contain"
+              className="w-52 h-52 sm:w-64 sm:h-64 object-contain"
               priority
             />
           </motion.div>
@@ -218,23 +217,6 @@ export default function HeroSection() {
         ))}
       </motion.div>
 
-      {/* Freccia scroll-down */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2, duration: 0.6 }}
-        className="absolute bottom-10"
-      >
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 2.2, ease: "easeInOut" }}
-          onClick={() => document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" })}
-          className="flex flex-col items-center gap-1.5 text-[#505060] hover:text-[#52b788] transition-colors cursor-pointer"
-        >
-          <span className="text-[10px] tracking-widest uppercase font-medium">Scorri</span>
-          <ArrowDown size={14} />
-        </motion.div>
-      </motion.div>
     </section>
   );
 }

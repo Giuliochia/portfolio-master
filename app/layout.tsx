@@ -17,17 +17,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Giulio Chiaramonte — Portfolio",
+  metadataBase: new URL("https://giuliochiaramonte.it"),
+  title: "Giulio Chiaramonte - Portfolio",
   description:
-    "Portfolio di Giulio Chiaramonte — sviluppatore frontend specializzato in applicazioni web moderne con React, Next.js e TypeScript.",
+    "Portfolio di Giulio Chiaramonte - sviluppatore frontend specializzato in applicazioni web moderne con React, Next.js e TypeScript.",
   authors: [{ name: "Giulio Chiaramonte" }],
   keywords: ["portfolio", "frontend developer", "React", "Next.js", "TypeScript"],
   icons: {
-    icon: "/logo.svg",
-    apple: "/logo.svg",
+    icon: "/logo.png",
+    apple: "/logo.png",
   },
   openGraph: {
-    title: "Giulio Chiaramonte — Portfolio",
+    title: "Giulio Chiaramonte - Portfolio",
     description: "Applicazioni web moderne con React, Next.js e TypeScript.",
     type: "website",
     images: [{ url: "/logo.png", width: 512, height: 512, alt: "GC Logo" }],

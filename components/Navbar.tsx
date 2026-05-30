@@ -61,11 +61,11 @@ export default function Navbar() {
           transition={{ duration: 0.2 }}
         >
           <Image
-            src="/logo.svg"
+            src="/logo.png"
             alt="GC Logo"
-            width={40}
-            height={40}
-            className="w-10 h-10 object-contain drop-shadow-[0_0_8px_rgba(82,183,136,0.3)]"
+            width={48}
+            height={48}
+            className="w-12 h-12 object-contain drop-shadow-[0_0_12px_rgba(82,183,136,0.5)]"
             priority
           />
         </motion.div>
@@ -87,7 +87,7 @@ export default function Navbar() {
         {/* CTA contatti */}
         <MagneticButton
           onClick={() => scrollTo("#contact")}
-          className="ml-2 px-4 py-1.5 rounded-lg text-sm font-medium border border-[rgba(82,183,136,0.3)] text-[#52b788] hover:bg-[rgba(82,183,136,0.08)] transition-all duration-200"
+          className="ml-2 px-4 py-1.5 rounded-lg text-sm font-medium border border-[rgba(82,183,136,0.7)] text-[#52b788] hover:bg-[rgba(82,183,136,0.12)] transition-all duration-200"
           strength={0.3}
         >
           Contattami

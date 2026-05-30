@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 
@@ -14,7 +14,7 @@ export default function Footer() {
     >
       <div className="max-w-5xl mx-auto flex items-center justify-between">
         <p className="text-[#505060] text-sm">
-          © {new Date().getFullYear()} Giulio Chiaramonte
+          Â© {new Date().getFullYear()} Giulio Chiaramonte
         </p>
         <a
           href="https://www.linkedin.com/in/giulio-chiaramonte-1445ab6b/"

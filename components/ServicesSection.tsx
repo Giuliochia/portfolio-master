@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -11,9 +11,9 @@ const services = [
   {
     icon: Monitor,
     title: "Sito Vetrina",
-    short: "La tua attività online, sempre.",
+    short: "La tua attivitÃ  online, sempre.",
     detail:
-      "Un sito curato che presenta la tua attività, i tuoi servizi e i tuoi contatti. Ideale per ristoranti, artigiani, studi professionali e negozi.",
+      "Un sito curato che presenta la tua attivitÃ , i tuoi servizi e i tuoi contatti. Ideale per ristoranti, artigiani, studi professionali e negozi.",
     previewSrc: "/previews/servizio-vetrina.png",
   },
   {
@@ -27,9 +27,9 @@ const services = [
   {
     icon: RefreshCw,
     title: "Restyling",
-    short: "Nuovo look, stessa identità.",
+    short: "Nuovo look, stessa identitÃ .",
     detail:
-      "Hai già un sito ma è datato? Lo rinfreschiamo graficamente per renderlo moderno e piacevole, senza ripartire da zero.",
+      "Hai giÃ  un sito ma Ã¨ datato? Lo rinfreschiamo graficamente per renderlo moderno e piacevole, senza ripartire da zero.",
     previewSrc: "/previews/servizio-restyling.png",
   },
   {
@@ -228,7 +228,7 @@ export default function ServicesSection() {
                     transition={{ duration: 0.2 }}
                     className="text-[10px] text-[#52b788] tracking-wider uppercase font-medium"
                   >
-                    Vedi anteprima →
+                    Vedi anteprima â†’
                   </motion.p>
 
                   <motion.div
